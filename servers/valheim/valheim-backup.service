@@ -1,0 +1,8 @@
+[Unit]
+Description=Backup Valheim world spezpocket
+After=valheim.service
+
+[Service]
+Type=oneshot
+User=steam
+ExecStart=/usr/local/bin/valheim-backup.sh
